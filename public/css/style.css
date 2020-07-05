@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Scada&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Antic&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+#slider,
+.wrap,
+.slide-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+/*---Start of navbar---*/
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.main-nav.black {
+    background: rgba(0, 0, 0, 0.1);
+    height: 50px;
+    padding: 5px 20px;
+}
+
+.main-nav .logo {
+    float: left;
+}
+
+.main-nav .logo img {
+    height: 60px;
+    transition: 0.5s;
+}
+
+.main-nav.black .logo img {
+    height: 40px;
+    padding: 0px 5px;
+}
+.main-nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav ul li {
+    list-style: none;
+}
+
+.main-nav ul li a {
+    line-height: 50px;
+    color: #fff;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-family: Scada;
+}
+
+.main-nav ul li a.active,
+.main-nav ul li a:hover {
+    color: #fff;
+    background: #f00;
+}
+
+.main-nav ul ul {
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+
+.main-nav ul li:hover > ul {
+    display: block;
+}
+
+/*---End of .main-navbar---*/
+
+/*---Header Section---*/
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide1 {
+    background-image: url("../Images/erp.jpg");
+}
+
+.slide2 {
+    background-image: url("../Images/network\ security.jpg");
+}
+
+.slide3 {
+    background-image: url("../Images/webdev.jpg");
+}
+
+.slide4 {
+    background-image: url("../Images/dataanalytics.jpg");
+}
+
+.slide5 {
+    background-image: url("../Images/machine-learning.jpeg");
+}
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slide-content span {
+    font-size: 5rem;
+    color: black;
+    font-family: Scada;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left {
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 30px;
+}
+
+#arrow-right {
+    border-width: 30px 0px 30px 40px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 30px;
+}
+/*---End of header---*/
+
+/*---Start of course section---*/
+#course-section {
+    background-color: slategrey;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 60px;
+}
+/*---End of course section---*/
+
+/*---Start of main content---*/
+
+#main-content {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: slategray;
+    padding: 50px 50px;
+}
+
+.text-container {
+    background-color: #fff;
+    height: 100px;
+    padding: 25px 25px;
+    text-align: center;
+}
+
+.text-container h2 {
+    color: #c0c0c0;
+    font-family: Ropa Sans;
+    font-weight: 150px;
+    font-size: 50px;
+}
+
+.border-1 {
+    width: 2px;
+    height: 230px;
+    background: black;
+}
+
+.card-1 {
+    background-color: teal;
+    padding: 10px 5px;
+    margin: 10px auto;
+    height: 25px;
+    /*background-color: white;*/
+}
+
+.card-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 30px;
+    padding: 40px 50px;
+    height: 200px;
+    width: 450px;
+    /*background-color: white;*/
+}
+/*---End of main content---*/
+
+/*---Separator-1---*/
+#separator-1 {
+    background-color: #c0c0c0;
+    background-image: url(../Images/uc.jpg);
+    background-position: center;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 25vh;
+}
+
+/*---End of Separator-1/
+
+/*---Start of Services---*/
+#services-section {
+    /*background-image: url(../Images/low-angle-photo-of-four-high-rise-curtain-wall-buildings-830891.jpg);*/
+    background-color: slategrey;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 60px;
+}
+
+.inner-width {
+    width: 100%;
+    /*max-width: 1200px;*/
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.section-title {
+    text-align: center;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: Scada;
+}
+
+.border {
+    width: 160px;
+    height: 2px;
+    background: #82ccdd;
+    margin: 40px auto;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-box {
+    max-width: 33.33%;
+    padding: 25px 50px;
+    text-align: center;
+    color: #ddd;
+}
+
+.service-icon {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 3px solid #82ccdd;
+    color: #82ccdd;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+}
+
+.service-icon {
+    line-height: 70px;
+    transform: rotate(-45deg);
+    font-size: 26px;
+}
+
+.service-icon-erp {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    color: #82ccdd;
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+}
+
+.service-icon-epr {
+    line-height: 70px;
+    font-size: 26px;
+}
+
+.service-icon-network {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    color: #82ccdd;
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+}
+
+.service-icon-network {
+    line-height: 70px;
+    font-size: 26px;
+}
+
+.service-icon-web {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    color: #82ccdd;
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+}
+
+.service-icon-web {
+    line-height: 70px;
+    font-size: 26px;
+}
+
+.service-icon-da {
+    display: inline-block;
+    width: 90px;
+    height: 85px;
+    color: #82ccdd;
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+}
+
+.service-icon-da {
+    line-height: 70px;
+    font-size: 26px;
+}
+
+.service-icon-ca {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    color: #82ccdd;
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+}
+
+.service-icon-ca {
+    line-height: 70px;
+    font-size: 26px;
+}
+
+.service-box:hover .service-icon {
+    background: #82ccdd;
+    color: #ddd;
+}
+
+.section-title {
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.service-desc {
+    font-size: 14px;
+    font-family: Antic;
+}
+
+.services-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    margin: 0px 550px;
+    padding: 40px 30px;
+}
+
+.services-image img {
+    height: 250px;
+}
+
+.card-1 h1 {
+    font-family: Scada;
+    color: #fff;
+}
+
+.card-2 p {
+    font-family: Antic;
+    color: #fff;
+}
+
+/*---Start of Footer---*/
+.footer {
+    background-color: slategrey;
+    color: #e9e9eb;
+    height: 2.5rem;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    left: 0px;
+    padding-top: 20px;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.footer a {
+    color: #e8e4c9;
+    text-decoration: none;
+}
+/*---End of Footer---*/
+
+/*---Start of Media Queries---*/
+@media screen and (max-width: 960px) {
+    .service-box {
+        max-width: 45%;
+    }
+}
+/*---End of Media Queries---*/
