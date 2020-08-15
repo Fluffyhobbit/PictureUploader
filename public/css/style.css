@@ -214,19 +214,8 @@ a:-webkit-any-link {
     padding: 10px 5px;
     margin: 10px auto;
     height: 25px;
-    /*background-color: white;*/
 }
 
-.card-2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin: 30px;
-    padding: 40px 50px;
-    height: 200px;
-    width: 450px;
-    /*background-color: white;*/
-}
 /*---End of main content---*/
 
 /*---Separator-1---*/
@@ -316,7 +305,7 @@ a:-webkit-any-link {
     transition: 0.3s linear;
 }
 
-.service-icon-epr {
+.service-icon-erp {
     line-height: 70px;
     font-size: 26px;
 }
@@ -342,7 +331,7 @@ a:-webkit-any-link {
     height: 70px;
     color: #82ccdd;
     margin-bottom: 30px;
-    margin-top: 16px;
+    margin-top: 30px;
     transition: 0.3s linear;
 }
 
@@ -396,6 +385,7 @@ a:-webkit-any-link {
 .service-desc {
     font-size: 14px;
     font-family: Antic;
+    padding: 15px 15px;
 }
 
 .services-image {
@@ -415,11 +405,6 @@ a:-webkit-any-link {
 
 .card-1 h1 {
     font-family: Scada;
-    color: #fff;
-}
-
-.card-2 p {
-    font-family: Antic;
     color: #fff;
 }
 
