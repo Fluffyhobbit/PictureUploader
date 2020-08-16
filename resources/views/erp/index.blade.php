@@ -16,8 +16,6 @@
     <nav class='main-nav'>
         <ul>
             <li><a href="#">Department</a></li>
-            <li><a href="#">Academics</a></li>
-            <li><a href="#">Research & Innovation</a></li>
             <li><a href="#">Consultation Hours</a></li>
         </ul>
     </nav>
